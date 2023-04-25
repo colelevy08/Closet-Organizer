@@ -6,7 +6,7 @@ import PlanOutfit from "./PlanOutfit";
 
 function ClosetContainer() {
     return(
-        <div>
+        <div className="closet-container">
             <FilterClothes />
             <ClothesList />
             <RandomOutfit />

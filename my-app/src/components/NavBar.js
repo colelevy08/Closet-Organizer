@@ -2,13 +2,14 @@ import React from "react";
 
 function NavBar() {
     return(
-        <form>
+        <div className="searchbar">
+            <label htmlFor="search">Search Closet: </label>
             <input
                 type="text"
                 id="search"
-                placeholder="Search Your Closet"
+                placeholder="Search for clothes"
             />
-        </form>
+        </div>
     )
 }
 

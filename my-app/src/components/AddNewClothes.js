@@ -2,7 +2,7 @@ import React from 'react'
 
 function AddNewClothes () {
     return(
-        <form>
+        <form className='new-clothes-form'>
             <input
                 type="text"
                 name="type"

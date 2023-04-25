@@ -1,4 +1,4 @@
-import '../App.css';
+import '../index.css';
 import AddNewClothes from './AddNewClothes';
 import Header from './Header';
 import ClosetContainer from './ClosetContainer';
