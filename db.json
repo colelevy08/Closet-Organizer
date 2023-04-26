@@ -1,3 +1,158 @@
 {
-  "clothes": []
+  "clothes": [
+    {
+      "id": 1,
+      "type": "shirt",
+      "color": "white",
+      "season": "all",
+      "image": "https://www.mrporter.com/variants/images/22831760541422174/in/w2000_q60.jpg"
+    },
+    {
+      "id": 2,
+      "type": "shirt",
+      "color": "black",
+      "season": "all",
+      "image": "https://imgprd19.hobbylobby.com/2/fe/7f/2fe7f9b08fb17ea5bffd92cf575dee4a8d898668/700Wx700H-634485-0320.jpg"
+    },
+    {
+      "id": 3,
+      "type": "shirt",
+      "color": "green",
+      "season": "all",
+      "image": "https://imgprd19.hobbylobby.com/2/4f/57/24f57e245a879cb2543edd1df4e090bfebf24a45/700Wx700H-1013689-0320.jpg"
+    },
+    {
+      "id": 4,
+      "type": "shirt",
+      "color": "blue",
+      "season": "fall/winter/spring",
+      "image": "https://cdn.shopify.com/s/files/1/0216/7184/products/A400-40-1_963b2a68-303c-41f8-a5fc-0581c1faf7ea.jpg?v=1470166928"
+    },
+    {
+      "id": 5,
+      "type": "jacket",
+      "color": "green",
+      "season": "fall/winter",
+      "image": "https://clothbase.s3.amazonaws.com/uploads/ce7c07ef-e503-4ab9-9948-39fd8efdb22b/image.jpg"
+    },
+    {
+      "id": 6,
+      "type": "shirt",
+      "color": "yellow",
+      "season": "all",
+      "image": "https://i.ebayimg.com/images/g/Hk0AAOxydgZTH3TY/s-l1600.jpg"
+    },
+    {
+      "id": 7,
+      "type": "shirt",
+      "color": "white",
+      "season": "summer",
+      "image": "https://m.media-amazon.com/images/I/A1ntnF3PJOL._AC_CLa%7C2140%2C2000%7C81EstXFRHYL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_UY1000_.png"
+    },
+    {
+      "id": 8,
+      "type": "shirt",
+      "color": "purple",
+      "season": "spring/summer",
+      "image": "https://m.media-amazon.com/images/I/31GbRez+0RS._SS400_.jpg"
+    },
+    {
+      "id": 9,
+      "type": "shirt",
+      "color": "yellow",
+      "season": "spring/summer",
+      "image": "https://www.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/0/9/0914c.12.jpg"
+    },
+    {
+      "id": 10,
+      "type": "shirt",
+      "color": "green",
+      "season": "spring/summer",
+      "image": "https://m.media-amazon.com/images/I/3193kZdKJ3L._SS400_.jpg"
+    },
+    {
+      "id": 11,
+      "type": "pants",
+      "color": "white",
+      "season": "all",
+      "image": "https://assets.vogue.com/photos/630698defe7396771712b583/3:4/w_1280%2Cc_limit/slide_9.jpg"
+    },
+    {
+      "id": 12,
+      "type": "pants",
+      "color": "blue",
+      "season": "all",
+      "image": "https://assets.vogue.com/photos/61490371ea2e1a842c17c824/3:4/w_1280%2Cc_limit/slide_185.jpg"
+    },
+    {
+      "id": 13,
+      "type": "pants",
+      "color": "black",
+      "season": "fall/winter",
+      "image": "https://cdn.mos.cms.futurecdn.net/K6DGCoxcXbJFzfuHqmhFLZ.jpg"
+    },
+    {
+      "id": 14,
+      "type": "pants",
+      "color": "pink",
+      "season": "spring/summer",
+      "image": "https://static.halsbrook.com/media/catalog/product/h/a/halsbrook_e609935bb51996ce42bab1a41affc14c.jpg"
+    },
+    {
+      "id": 15,
+      "type": "pants",
+      "color": "green",
+      "season": "all",
+      "image": "https://media.maisonkitsune.com/media/catalog/product/j/w/jw01180wt0020-p370_d.jpg"
+    },
+    {
+      "id": 16,
+      "type": "jacket",
+      "color": "blue",
+      "season": "fall/spring",
+      "image": "https://i.ebayimg.com/images/g/blMAAOSwkOJh3kfn/s-l500.jpg"
+    },
+    {
+      "id": 17,
+      "type": "jacket",
+      "color": "black",
+      "season": "fall/winter",
+      "image": "https://www.versace.com/on/demandware.static/-/Sites-ver-master-catalog/default/dw5a1a0ecf/original/90_1010049-1A07236_1B000_10_MedusaSingle-BreastedBlazer-Blazers-versace-online-store_0_1.jpg"
+    },
+    {
+      "id": 18,
+      "type": "jacket",
+      "color": "green",
+      "season": "fall/winter/spring",
+      "image": "https://ae01.alicdn.com/kf/S38a2cf4e4978410bbb37a5d951f206e9B/TRAF-Women-Fashion-Double-Breasted-Tweed-Green-Blazer-Coat-Vintage-Long-Sleeve-Flap-Pockets-Female-Outerwear.jpg"
+    },
+    {
+      "id": 19,
+      "type": "jacket",
+      "color": "brown",
+      "season": "winter",
+      "image": "https://m.media-amazon.com/images/I/61L9A-SEnWL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 20,
+      "type": "shirt",
+      "color": "blue",
+      "season": "fall/winter",
+      "image": "https://m.media-amazon.com/images/I/716q1GuuQ1L._AC_SL1500_.jpg"
+    },
+    {
+      "type": "shirt",
+      "color": "red",
+      "season": "all",
+      "image": "https://imgprd19.hobbylobby.com/2/d2/2d/2d22d4c34e27b131ae4b74b6a6ba9a035b7eabae/700Wx700H-422790-0320.jpg",
+      "id": 21
+    },
+    {
+      "type": "",
+      "color": "",
+      "season": "",
+      "image": "",
+      "id": 22
+    }
+  ]
 }

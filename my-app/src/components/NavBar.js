@@ -1,15 +1,17 @@
 import React from "react";
 
-function NavBar() {
+function NavBar({changeSearchClothes, searchClothes}) {
+
     return(
-        <div className="searchbar">
-            <label htmlFor="search">Search Closet: </label>
+        <form className="searchbar">
             <input
                 type="text"
                 id="search"
                 placeholder="Search for clothes"
+                value={searchClothes}
+                onChange = {(event) => changeSearchClothes(event)}
             />
-        </div>
+        </form>
     )
 }
 

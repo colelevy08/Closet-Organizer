@@ -1,19 +1,14 @@
 import '../index.css';
-import AddNewClothes from './AddNewClothes';
+import React from 'react';
 import Header from './Header';
 import ClosetContainer from './ClosetContainer';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        Your Closet Organizer
-        <Header />
-      </header>
+    <div className='app'>
+      <Header />
       <ClosetContainer />
-      <div className="sidebar">
-      <AddNewClothes />
-      </div>
     </div>
   );
 }
