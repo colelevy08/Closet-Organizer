@@ -15,6 +15,8 @@ function ClosetContainer() {
 
     const [searchClothes, setSearchClothes] = useState('')
 
+    const [clothesWorn, setClothesWorn] = useState([])
+
     useEffect(fetchClothes, [])
 
     function fetchClothes() {
@@ -39,11 +41,27 @@ function ClosetContainer() {
     }
 
     function changeSearchClothes(event) {
-        setSearchClothes(event.target.value)
+        setSearchClothes(event.target.value.toLowerCase())
     }
 
-    const filteredSearchClothes = clothes.filter(cloth => cloth.type.toLowerCase().includes(searchClothes.toLowerCase()))
-    console.log(filteredSearchClothes)
+    const splitSearch = searchClothes.split(' ')
+
+    const filteredSearchClothes = clothes.filter(function(cloth) {
+
+        if (splitSearch.length === 1) return(
+            splitSearch.some(word => cloth.type.toLowerCase().includes(word) || cloth.color.toLowerCase().includes(word) || searchClothes === "")
+        )
+
+        if (splitSearch.length > 1) {
+            const typeMatch = splitSearch.some(word => cloth.type.toLowerCase().includes(word))
+            const colorMatch = splitSearch.some(word => cloth.color.toLowerCase().includes(word))
+            if (typeMatch && colorMatch) return(true)
+        }
+    })
+    
+    function markClothesAsWorn (id) {
+        setClothesWorn([...clothesWorn, id])
+    }
 
     return(
         <main>
@@ -55,10 +73,14 @@ function ClosetContainer() {
                 addNewClothesFormSubmit = {addNewClothesFormSubmit}
             />
             <FilterClothes />
-            <RandomOutfit />
+            <RandomOutfit 
+                clothes = {clothes}
+            />
             <PlanOutfit />
             <ClothesList 
                 clothes = {filteredSearchClothes}
+                clothesWorn = {clothesWorn}
+                markClothesAsWorn = {markClothesAsWorn}
             />
         </main>
     )
