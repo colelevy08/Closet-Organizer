@@ -27,7 +27,7 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
                 <button>Worn Recently</button>
             )}
             <button
-                onClick={deleteClothes}
+                onClick={() => deleteClothes(id)}
             >Remove</button>
         </li>
     )

@@ -65,13 +65,22 @@ function ClosetContainer() {
     }
 
     function deleteClothes(id) {
-        const removeCloth = clothes.filter(cloth => cloth.id !== id)
-        console.log(removeCloth)
+        
+        const deleteRequest = {
+            method: 'DELETE',
+        }
+
+        fetch(clothesUrl + id, deleteRequest)
+        .then(() => {
+            const removeCloth = clothes.filter(cloth => cloth.id !== id)
+            setClothes(removeCloth)
+        })
     }
 
     function toggleIsLiked(id) {
         setIsLiked([...isLiked, id])
     }
+
 
     return(
         <main>

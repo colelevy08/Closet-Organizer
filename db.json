@@ -139,13 +139,6 @@
       "color": "blue",
       "season": "fall/winter",
       "image": "https://m.media-amazon.com/images/I/716q1GuuQ1L._AC_SL1500_.jpg"
-    },
-    {
-      "type": "shirt",
-      "color": "red",
-      "season": "all",
-      "image": "https://imgprd19.hobbylobby.com/2/d2/2d/2d22d4c34e27b131ae4b74b6a6ba9a035b7eabae/700Wx700H-422790-0320.jpg",
-      "id": 21
     }
   ]
 }
