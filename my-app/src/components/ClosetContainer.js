@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ClothesList from "./ClothesList";
-import RandomOutfit from "./RandomOutfit";
-import PlanOutfit from "./PlanOutfit";
+//import RandomOutfit from "./RandomOutfit";
+//import PlanOutfit from "./PlanOutfit";
 import AddNewClothes from './AddNewClothes';
 import NavBar from "./NavBar";
 
@@ -91,10 +91,10 @@ function ClosetContainer() {
             <AddNewClothes 
                 addNewClothesFormSubmit = {addNewClothesFormSubmit}
             />
-            <RandomOutfit 
-                clothes = {clothes}
+            {/* //<RandomOutfit 
+               // clothes = {clothes}
             />
-            <PlanOutfit />
+            //<PlanOutfit /> */}
             <ClothesList 
                 clothes = {filteredSearchClothes}
                 clothesWorn = {clothesWorn}

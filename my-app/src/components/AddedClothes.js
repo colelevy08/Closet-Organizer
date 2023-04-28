@@ -14,14 +14,10 @@ const AddedClothes = () => {
   return (
     <div>
       <h2>Added Clothes</h2>
-      {addedClothes.map((cloth) => (
-        <div key={cloth.id}>
-          <ClothesCard cloth={cloth} />
-          <img src={cloth.image} alt={cloth.type} style={{width: '200px', height: '200px'}} />
-        </div>
-      ))}
+      <ul className="cards"> {addedClothes.map((cloth) => (<ClothesCard cloth={cloth} key={cloth.id} />))}
+      </ul>
     </div>
-  );
+  )
 };
 
 export default AddedClothes;
