@@ -37,12 +37,13 @@ button {
   font-family: inherit;
   border: none;
   cursor: pointer;
+  background-color: antiquewhite;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 1); 
+  border-radius: 26px; 
+  box-shadow: 35px 35px 68px 0px rgba(247, 220, 189, 0.5), inset -8px -8px 16px 0px rgba(247, 220, 189, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
-button.primary {
-  background-color: var(--green);
-  color: white;
-}
 
 .app {
   margin: 0 auto;
@@ -54,7 +55,7 @@ main {
 }
 
 .new-clothes-form {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin: 2rem 0;
   background-color: antiquewhite;
 }
@@ -64,13 +65,22 @@ main {
   justify-content: center;
 }
 
-.new-plant-form input {
-  margin-right: 2rem;
+.new-clothes-form input {
+  margin-right: 1.5rem;
   flex: 1;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 1); 
+  border-radius: 26px; 
+  box-shadow: 35px 35px 68px 0px rgba(247, 220, 189, 0.5), inset -8px -8px 16px 0px rgba(247, 220, 189, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
-.new-plant-form button {
-  width: 150px;
+.new-clothes-form button {
+  width: 170px;
+  font-size: medium;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 1); 
+  border-radius: 26px; 
+  box-shadow: 35px 35px 68px 0px rgba(247, 220, 189, 0.5), inset -8px -8px 16px 0px rgba(247, 220, 189, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .searchbar {
@@ -99,20 +109,37 @@ input:focus {
   border-bottom: 2px solid salmon;
 }
 
+.random-button {
+  padding: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.plan-outfit {
+  padding: 0.45rem;
+  margin-bottom: 1rem;
+}
+
 .cards {
   list-style: none;
+  border-bottom: 2px solid salmon;
+  border-top: 2px solid salmon;
 }
 
 .card {
   margin: 1rem;
   display: grid;
+  width: 100%;
   place-items: center;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(255, 255, 255, 1); 
+  border-radius: 26px; 
+  box-shadow: 35px 35px 68px 0px rgba(247, 220, 189, 0.5), inset -8px -8px 16px 0px rgba(247, 220, 189, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .card img {
   max-width: 300px;
   max-height: 270px;
-  width: auto;
+  width: 75%;
   height: auto;
 }
 
@@ -128,6 +155,10 @@ input:focus {
   font-family: serif;
   font-size: 1rem;
   text-align: center;
+}
+
+.delete-button {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
