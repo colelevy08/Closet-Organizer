@@ -4,13 +4,15 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
 
     const {id, type, color, season, image} = cloth
 
+    console.log('Image URL: ', image); // debug line
+
     return(
         <li className="card">
             <img src={image} alt={type + color}></img>
             <h3>{color} {type} 
             </h3>
             <p>Season: {season}</p>
-            {!isLiked.includes(id) ?(
+            { isLiked && !isLiked.includes(id) ?(
                 <button
                     onClick={() => toggleIsLiked(id)}
                 >Favorite</button>
@@ -19,7 +21,7 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
                     onClick={() => toggleIsLiked(id)}
                 >❤️</button>
                 )}
-            {!clothesWorn.includes(id) ?(
+            { clothesWorn && !clothesWorn.includes(id) ?(
                 <button
                     onClick={() => markClothesAsWorn(id)}
                 >Clean</button>
@@ -33,4 +35,4 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
     )
 }
 
-export default ClothesCard
+export default ClothesCard;

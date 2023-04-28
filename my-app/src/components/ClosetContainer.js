@@ -5,7 +5,7 @@ import PlanOutfit from "./PlanOutfit";
 import AddNewClothes from './AddNewClothes';
 import NavBar from "./NavBar";
 
-const baseUrl = "http://localhost:5000/"
+const baseUrl = "http://localhost:3002/"
 const clothesUrl = baseUrl + "clothes/"
 
 function ClosetContainer() {
