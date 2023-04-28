@@ -1,7 +1,7 @@
 import React from "react";
 import ClothesCard from "./ClothesCard"
 
-function ClothesList({clothes, markClothesAsWorn, clothesWorn}) {
+function ClothesList({clothes, markClothesAsWorn, clothesWorn, deleteClothes, toggleIsLiked, isLiked}) {
 
     const renderClothesCard = clothes.map(cloth =>
         <ClothesCard 
@@ -9,6 +9,9 @@ function ClothesList({clothes, markClothesAsWorn, clothesWorn}) {
             cloth = {cloth}
             markClothesAsWorn = {markClothesAsWorn}
             clothesWorn = {clothesWorn}
+            deleteClothes = {deleteClothes}
+            toggleIsLiked = {toggleIsLiked}
+            isLiked = {isLiked}
         />)
 
     return(
