@@ -1,13 +1,23 @@
 import React from "react";
 
-function ClothesCard({cloth, markClothesAsWorn, clothesWorn}) {
+function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLiked, toggleIsLiked}) {
 
     const {id, type, color, season, image} = cloth
 
     return(
         <li className="card">
             <img src={image} alt={type + color}></img>
-            <h3>{color} {type} <button>❤️</button></h3>
+            <h3>{color} {type} 
+            {!isLiked.includes(id) ?(
+                <button
+                    onClick={() => toggleIsLiked(id)}
+                >Favorite</button>
+                ) : (
+                <button
+                    onClick={() => toggleIsLiked(id)}
+                >❤️</button>
+                )}
+            </h3>
             <p>Season: {season}</p>
             {!clothesWorn.includes(id) ?(
                 <button
@@ -16,8 +26,9 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn}) {
             ) : (
                 <button>Worn Recently</button>
             )}
-            <br></br>
-            <button>Remove</button>
+            <button
+                onClick={deleteClothes}
+            >Remove</button>
         </li>
     )
 }

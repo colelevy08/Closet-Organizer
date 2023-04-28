@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import ClothesList from "./ClothesList";
-import FilterClothes from "./FilterClothes";
 import RandomOutfit from "./RandomOutfit";
 import PlanOutfit from "./PlanOutfit";
 import AddNewClothes from './AddNewClothes';
@@ -16,6 +15,8 @@ function ClosetContainer() {
     const [searchClothes, setSearchClothes] = useState('')
 
     const [clothesWorn, setClothesWorn] = useState([])
+
+    const [isLiked, setIsLiked] = useState([])
 
     useEffect(fetchClothes, [])
 
@@ -63,6 +64,15 @@ function ClosetContainer() {
         setClothesWorn([...clothesWorn, id])
     }
 
+    function deleteClothes(id) {
+        const removeCloth = clothes.filter(cloth => cloth.id !== id)
+        console.log(removeCloth)
+    }
+
+    function toggleIsLiked(id) {
+        setIsLiked([...isLiked, id])
+    }
+
     return(
         <main>
             <NavBar 
@@ -72,7 +82,6 @@ function ClosetContainer() {
             <AddNewClothes 
                 addNewClothesFormSubmit = {addNewClothesFormSubmit}
             />
-            <FilterClothes />
             <RandomOutfit 
                 clothes = {clothes}
             />
@@ -81,6 +90,9 @@ function ClosetContainer() {
                 clothes = {filteredSearchClothes}
                 clothesWorn = {clothesWorn}
                 markClothesAsWorn = {markClothesAsWorn}
+                deleteClothes = {deleteClothes}
+                toggleIsLiked = {toggleIsLiked}
+                isLiked = {isLiked}
             />
         </main>
     )
