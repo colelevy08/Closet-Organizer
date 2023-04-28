@@ -20,7 +20,7 @@ function RandomOutfit({clothes}) {
     };
 
     return(
-        <button onClick={handleClick}>Random Outfit</button>
+        <button className="random-button" onClick={handleClick}>Random Outfit</button>
     )
 }
 

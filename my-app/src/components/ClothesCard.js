@@ -8,6 +8,8 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
         <li className="card">
             <img src={image} alt={type + color}></img>
             <h3>{color} {type} 
+            </h3>
+            <p>Season: {season}</p>
             {!isLiked.includes(id) ?(
                 <button
                     onClick={() => toggleIsLiked(id)}
@@ -17,8 +19,6 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
                     onClick={() => toggleIsLiked(id)}
                 >❤️</button>
                 )}
-            </h3>
-            <p>Season: {season}</p>
             {!clothesWorn.includes(id) ?(
                 <button
                     onClick={() => markClothesAsWorn(id)}
@@ -26,7 +26,7 @@ function ClothesCard({cloth, markClothesAsWorn, clothesWorn, deleteClothes, isLi
             ) : (
                 <button>Worn Recently</button>
             )}
-            <button
+            <button className="delete-button"
                 onClick={() => deleteClothes(id)}
             >Remove</button>
         </li>

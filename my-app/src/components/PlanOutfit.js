@@ -2,7 +2,7 @@ import React from "react";
 
 function PlanOutfit() {
     return(
-        <button>Plan Outfit</button>
+        <button className="plan-outfit" >Plan Outfit</button>
     )
 }
 
